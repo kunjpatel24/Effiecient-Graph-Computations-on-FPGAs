@@ -1,0 +1,29 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+
+# Create an empty graph
+G = nx.Graph()
+
+# Add nodes to the graph
+nodes = ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V20']
+G.add_nodes_from(nodes)
+
+# Add edges to the graph with weights
+edges = [('V1', 'V3', 2), 
+         ('V1', 'V7', 3), 
+         ('V1', 'V20', 5), 
+         ('V2', 'V5', 6), 
+         ('V2', 'V6', 1), 
+         ('V3', 'V7', 4)]
+G.add_weighted_edges_from(edges)
+
+# Draw the graph
+pos = nx.shell_layout(G)
+nx.draw(G, pos, with_labels=True, font_weight='bold')
+
+# Draw the weights
+labels = nx.get_edge_attributes(G, 'weight')
+nx.draw_networkx_edge_labels(G, pos, edge_labels=labels)
+
+# Show the plot
+plt.show()
