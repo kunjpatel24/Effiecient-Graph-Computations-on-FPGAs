@@ -1,32 +1,66 @@
-import numpy as np
-class AdaptiveScheduler:
-    def __init__(self, num_pes, num_tasks):
-        self.num_pes = num_pes
-        self.num_tasks = num_tasks
-        self.task_queue = np.arange(num_tasks)
-        self.task_status = np.zeros(num_tasks, dtype=int)
-        self.pe_progress = np.zeros(num_pes, dtype=int)
-    def schedule(self):
-        while True:
-            # Check if there are any tasks in the task queue.
-            if np.all(self.task_queue == -1):
-                break
-            # Get the next task from the task queue.
-            task = self.task_queue[0]
-            self.task_queue[0] = -1
-            # Find the PE with the least progress.
-            min_progress = np.inf
-            min_pe = -1
-            for i in range(self.num_pes):
-                if self.pe_progress[i] < min_progress:
-                    min_progress = self.pe_progress[i]
-                    min_pe = i
-            # Assign the task to the PE with the least progress.
-            self.pe_progress[min_pe] += 1
-            # Remove the task from the task queue.
-            self.task_queue = np.delete(self.task_queue, 0)
-            # Print the task and PE information.
-            print("Task {} assigned to PE {}".format(task, min_pe))
-if __name__ == "__main__":
-    scheduler = AdaptiveScheduler(4, 10)
-    scheduler.schedule()
+#include <iostream>
+#include <vector>
+#include <numeric>
+#include <limits>
+#include <algorithm>
+#include <fstream>
+#include <sstream>
+
+class AdaptiveScheduler {
+private:
+    int num_pes;
+    std::vector<int> task_queue;
+    std::vector<int> pe_progress;
+public:
+    AdaptiveScheduler(int num_pes, const std::string& filename) : num_pes(num_pes) {
+        std::ifstream file(filename);
+        std::string line;
+        
+        // Skip to vertices line
+        while (std::getline(file, line) && line != "Vertices:")
+            ;
+        
+        // Read vertices as tasks
+        while (std::getline(file, line) && line != "Adjacency Lists:") {
+            std::stringstream ss(line);
+            int task;
+            while (ss >> task)
+                task_queue.push_back(task);
+        }
+
+        pe_progress.resize(num_pes, 0);
+        file.close();
+    }
+
+    void schedule() {
+        while (true) {
+            // Check if there are any tasks in the task queue.
+            if (task_queue.empty()) {
+                break;
+            }
+            // Get the next task from the task queue.
+            int task = task_queue.front();
+            // Find the PE with the least progress.
+            int min_progress = std::numeric_limits<int>::max();
+            int min_pe = -1;
+            for (int i = 0; i < num_pes; ++i) {
+                if (pe_progress[i] < min_progress) {
+                    min_progress = pe_progress[i];
+                    min_pe = i;
+                }
+            }
+            // Assign the task to the PE with the least progress.
+            pe_progress[min_pe] += 1;
+            // Remove the task from the task queue.
+            task_queue.erase(task_queue.begin());
+            // Print the task and PE information.
+            std::cout << "Task " << task << " assigned to PE " << min_pe << "\n";
+        }
+    }
+};
+
+int main() {
+    AdaptiveScheduler scheduler(4, "compressed_graph.txt");
+    scheduler.schedule();
+    return 0;
+}
