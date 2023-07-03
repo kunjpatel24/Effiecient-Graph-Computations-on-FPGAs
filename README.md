@@ -11,11 +11,17 @@ Step 2: Importing the dataset files
 The datasets can be obtained from [Stanford Data Library](https://snap.stanford.edu/snap/download.html)
 
 Step 3:Running your code
+
 a) Create a new project in Intel Quartus Prime. You can do this by selecting the "New Project" option from the File menu.
+
 b) Select the "High Level Synthesis" project type. This will create a project that is configured for using the Intel HLS compiler.
+
 c) Add your C++ code to the project. You can do this by selecting the "File" menu and then selecting the "Add Files" option.
+
 d) Configure the Intel HLS compiler options. You can do this by editing the project settings.
+
 e) Run the Intel HLS compiler. You can do this by selecting the "Run" menu and then selecting the "Synthesize and Implement" option.
+
 f) Synthesizing and implementing your design in an Intel FPGA. You can do this by selecting the "Run" menu and then selecting the "Program Device" option.
 
 Once you have completed these steps, you will have converted your C++ logic into RTL and implemented it in an Intel FPGA.
