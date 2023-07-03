@@ -5,7 +5,7 @@ Clone the Repository: Use Git to clone the code repository from GitHub:
 
 bash
 Copy code
-git clone <[github-repository-url](https://github.com/kunjpatel24/Effiecient-Graph-Computations-on-FPGAs/tree/master)>
+git clone <[Efficient-Graph-Computations-on-FPGAs](https://github.com/kunjpatel24/Effiecient-Graph-Computations-on-FPGAs/tree/master)>
 
 Step 2: Importing the dataset files
 The datasets can be obtained from [Stanford Data Library](https://snap.stanford.edu/snap/download.html)
