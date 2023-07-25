@@ -12,12 +12,12 @@ NOTE: Some are included in the 'Dataset' folder, to use a different one, please 
 
 Step 3:Running your code
 
-a) Create a new project in Vitis HLS. You can do this by selecting the "New Project" option from the File menu.
+\a) Create a new project in Vitis HLS. You can do this by selecting the "New Project" option from the File menu.
 b) Add Graph.cpp to top function
 c) Add Graph.cpp as the source file
 d) Add Graph.h as the source file, click next
 e) Add test_bench.cpp as a test bench file, click next
-e) From part selection, select 'xcvu11p-flga2577-1-e'
-e) Run the Vitis HLS compiler
+f) From part selection, select 'xcvu11p-flga2577-1-e'
+g) Run the Vitis HLS compiler
 
 Once you have completed these steps, you will have converted your C++ logic into RTL and have a solution ready for implementation on a Xilinx FPGA.
