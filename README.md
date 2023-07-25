@@ -16,7 +16,7 @@ b) Add Graph.cpp to top function
 c) Add Graph.cpp as the source file  
 d) Add Graph.h as the source file, click next  
 e) Add test_bench.cpp as a test bench file, click next  
-f) From part selection, select 'xcvu11p-flga2577-1-e'  
+f) From part selection, select '**xcvu11p-flga2577-1-e**'  
 g) Run the Vitis HLS compiler
 
 Once you have completed these steps, you will have converted your C++ logic into RTL and have a solution ready for implementation on a Xilinx FPGA.
