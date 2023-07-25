@@ -1,0 +1,202 @@
+
+
+================================================================
+== Synthesis Summary Report of 'top_function'
+================================================================
++ General Information: 
+    * Date:           Mon Jul 24 10:31:18 2023
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        AllAlgoExecTest
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexu
+    * Target device:  xcvu065_CIV-ffvc1517-1H-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+------------+------------+-----+
+    |                  Modules                  | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |            |            |     |
+    |                  & Loops                  | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF     |     LUT    | URAM|
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+------------+------------+-----+
+    |+ top_function                             |     -|  2.46|        -|        -|         -|        -|     -|        no|     -|   -|  3500 (~0%)|   5875 (1%)|    -|
+    | + top_function_Pipeline_1                 |     -|  5.28|       22|  220.000|         -|       22|     -|        no|     -|   -|     7 (~0%)|    51 (~0%)|    -|
+    |  o Loop 1                                 |     -|  7.30|       20|  200.000|         1|        1|    20|       yes|     -|   -|           -|           -|    -|
+    | + top_function_Pipeline_3                 |     -|  5.28|       22|  220.000|         -|       22|     -|        no|     -|   -|     7 (~0%)|    51 (~0%)|    -|
+    |  o Loop 1                                 |     -|  7.30|       20|  200.000|         1|        1|    20|       yes|     -|   -|           -|           -|    -|
+    | + top_function_Pipeline_5                 |     -|  5.28|       22|  220.000|         -|       22|     -|        no|     -|   -|     7 (~0%)|    51 (~0%)|    -|
+    |  o Loop 1                                 |     -|  7.30|       20|  200.000|         1|        1|    20|       yes|     -|   -|           -|           -|    -|
+    | + top_function_Pipeline_7                 |     -|  5.28|       22|  220.000|         -|       22|     -|        no|     -|   -|     7 (~0%)|    51 (~0%)|    -|
+    |  o Loop 1                                 |     -|  7.30|       20|  200.000|         1|        1|    20|       yes|     -|   -|           -|           -|    -|
+    | + top_function_Pipeline_VITIS_LOOP_37_1   |     -|  2.46|        -|        -|         -|        -|     -|        no|     -|   -|   773 (~0%)|  1011 (~0%)|    -|
+    |  o VITIS_LOOP_37_1                        |    II|  7.30|        -|        -|        13|       13|     -|       yes|     -|   -|           -|           -|    -|
+    | + top_function_Pipeline_VITIS_LOOP_58_1   |     -|  2.46|        -|        -|         -|        -|     -|        no|     -|   -|   776 (~0%)|   929 (~0%)|    -|
+    |  o VITIS_LOOP_58_1                        |    II|  7.30|        -|        -|        13|       13|     -|       yes|     -|   -|           -|           -|    -|
+    | + top_function_Pipeline_VITIS_LOOP_79_1   |     -|  2.46|        -|        -|         -|        -|     -|        no|     -|   -|   776 (~0%)|   929 (~0%)|    -|
+    |  o VITIS_LOOP_79_1                        |    II|  7.30|        -|        -|        13|       13|     -|       yes|     -|   -|           -|           -|    -|
+    | + top_function_Pipeline_VITIS_LOOP_100_1  |     -|  2.46|        -|        -|         -|        -|     -|        no|     -|   -|   869 (~0%)|  1020 (~0%)|    -|
+    |  o VITIS_LOOP_100_1                       |    II|  7.30|        -|        -|        13|       13|     -|       yes|     -|   -|           -|           -|    -|
+    | + top_function_Pipeline_VITIS_LOOP_141_1  |     -|  4.01|        -|        -|         -|        -|     -|        no|     -|   -|    70 (~0%)|   166 (~0%)|    -|
+    |  o VITIS_LOOP_141_1                       |     -|  7.30|        -|        -|         2|        1|     -|       yes|     -|   -|           -|           -|    -|
+    +-------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++--------------------+--------+-----------+----------+
+| Port               | Mode   | Direction | Bitwidth |
++--------------------+--------+-----------+----------+
+| newListValue       | ap_vld | out       | 32       |
+| signal_r           | ap_vld | out       | 32       |
+| totalTraversalSize | ap_vld | out       | 32       |
++--------------------+--------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------------+-----------+----------+
+| Argument           | Direction | Datatype |
++--------------------+-----------+----------+
+| newListValue       | out       | int&     |
+| totalTraversalSize | out       | int&     |
+| signal             | out       | int&     |
++--------------------+-----------+----------+
+
+* SW-to-HW Mapping
++--------------------+---------------------------+---------+
+| Argument           | HW Interface              | HW Type |
++--------------------+---------------------------+---------+
+| newListValue       | newListValue              | port    |
+| newListValue       | newListValue_ap_vld       | port    |
+| totalTraversalSize | totalTraversalSize        | port    |
+| totalTraversalSize | totalTraversalSize_ap_vld | port    |
+| signal             | signal_r                  | port    |
+| signal             | signal_r_ap_vld           | port    |
++--------------------+---------------------------+---------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                                      | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-------------------------------------------+-----+--------+-------------+-----+--------+---------+
+| + top_function                            | 0   |        |             |     |        |         |
+|   i_fu_616_p2                             | -   |        | i           | add | fabric | 0       |
+|  + top_function_Pipeline_1                | 0   |        |             |     |        |         |
+|    empty_13_fu_58_p2                      | -   |        | empty_13    | add | fabric | 0       |
+|  + top_function_Pipeline_3                | 0   |        |             |     |        |         |
+|    empty_12_fu_58_p2                      | -   |        | empty_12    | add | fabric | 0       |
+|  + top_function_Pipeline_5                | 0   |        |             |     |        |         |
+|    empty_11_fu_58_p2                      | -   |        | empty_11    | add | fabric | 0       |
+|  + top_function_Pipeline_7                | 0   |        |             |     |        |         |
+|    empty_10_fu_58_p2                      | -   |        | empty_10    | add | fabric | 0       |
+|  + top_function_Pipeline_VITIS_LOOP_37_1  | 0   |        |             |     |        |         |
+|    add_ln38_fu_594_p2                     | -   |        | add_ln38    | add | fabric | 0       |
+|    add_ln39_fu_605_p2                     | -   |        | add_ln39    | add | fabric | 0       |
+|    add_ln44_fu_636_p2                     | -   |        | add_ln44    | add | fabric | 0       |
+|    add_ln44_1_fu_647_p2                   | -   |        | add_ln44_1  | add | fabric | 0       |
+|    add_ln44_2_fu_658_p2                   | -   |        | add_ln44_2  | add | fabric | 0       |
+|    add_ln44_3_fu_665_p2                   | -   |        | add_ln44_3  | add | fabric | 0       |
+|    add_ln44_4_fu_680_p2                   | -   |        | add_ln44_4  | add | fabric | 0       |
+|    add_ln44_5_fu_690_p2                   | -   |        | add_ln44_5  | add | fabric | 0       |
+|    add_ln44_6_fu_701_p2                   | -   |        | add_ln44_6  | add | fabric | 0       |
+|    add_ln44_7_fu_712_p2                   | -   |        | add_ln44_7  | add | fabric | 0       |
+|    add_ln44_8_fu_723_p2                   | -   |        | add_ln44_8  | add | fabric | 0       |
+|    add_ln44_9_fu_735_p2                   | -   |        | add_ln44_9  | add | fabric | 0       |
+|  + top_function_Pipeline_VITIS_LOOP_58_1  | 0   |        |             |     |        |         |
+|    top_4_fu_626_p2                        | -   |        | top_4       | add | fabric | 0       |
+|    add_ln60_fu_631_p2                     | -   |        | add_ln60    | add | fabric | 0       |
+|    add_ln65_fu_642_p2                     | -   |        | add_ln65    | add | fabric | 0       |
+|    add_ln65_1_fu_653_p2                   | -   |        | add_ln65_1  | add | fabric | 0       |
+|    add_ln65_2_fu_660_p2                   | -   |        | add_ln65_2  | add | fabric | 0       |
+|    add_ln65_3_fu_675_p2                   | -   |        | add_ln65_3  | add | fabric | 0       |
+|    add_ln65_4_fu_685_p2                   | -   |        | add_ln65_4  | add | fabric | 0       |
+|    add_ln65_5_fu_696_p2                   | -   |        | add_ln65_5  | add | fabric | 0       |
+|    add_ln65_6_fu_707_p2                   | -   |        | add_ln65_6  | add | fabric | 0       |
+|    add_ln65_7_fu_718_p2                   | -   |        | add_ln65_7  | add | fabric | 0       |
+|    add_ln65_8_fu_730_p2                   | -   |        | add_ln65_8  | add | fabric | 0       |
+|  + top_function_Pipeline_VITIS_LOOP_79_1  | 0   |        |             |     |        |         |
+|    top_2_fu_626_p2                        | -   |        | top_2       | add | fabric | 0       |
+|    add_ln81_fu_631_p2                     | -   |        | add_ln81    | add | fabric | 0       |
+|    add_ln86_fu_642_p2                     | -   |        | add_ln86    | add | fabric | 0       |
+|    add_ln86_1_fu_653_p2                   | -   |        | add_ln86_1  | add | fabric | 0       |
+|    add_ln86_2_fu_660_p2                   | -   |        | add_ln86_2  | add | fabric | 0       |
+|    add_ln86_3_fu_675_p2                   | -   |        | add_ln86_3  | add | fabric | 0       |
+|    add_ln86_4_fu_685_p2                   | -   |        | add_ln86_4  | add | fabric | 0       |
+|    add_ln86_5_fu_696_p2                   | -   |        | add_ln86_5  | add | fabric | 0       |
+|    add_ln86_6_fu_707_p2                   | -   |        | add_ln86_6  | add | fabric | 0       |
+|    add_ln86_7_fu_718_p2                   | -   |        | add_ln86_7  | add | fabric | 0       |
+|    add_ln86_8_fu_730_p2                   | -   |        | add_ln86_8  | add | fabric | 0       |
+|  + top_function_Pipeline_VITIS_LOOP_100_1 | 0   |        |             |     |        |         |
+|    add_ln101_fu_624_p2                    | -   |        | add_ln101   | add | fabric | 0       |
+|    add_ln102_fu_654_p2                    | -   |        | add_ln102   | add | fabric | 0       |
+|    add_ln107_fu_665_p2                    | -   |        | add_ln107   | add | fabric | 0       |
+|    add_ln107_1_fu_676_p2                  | -   |        | add_ln107_1 | add | fabric | 0       |
+|    add_ln107_2_fu_687_p2                  | -   |        | add_ln107_2 | add | fabric | 0       |
+|    add_ln107_3_fu_694_p2                  | -   |        | add_ln107_3 | add | fabric | 0       |
+|    add_ln107_4_fu_709_p2                  | -   |        | add_ln107_4 | add | fabric | 0       |
+|    add_ln107_5_fu_719_p2                  | -   |        | add_ln107_5 | add | fabric | 0       |
+|    add_ln107_6_fu_730_p2                  | -   |        | add_ln107_6 | add | fabric | 0       |
+|    add_ln107_7_fu_741_p2                  | -   |        | add_ln107_7 | add | fabric | 0       |
+|    add_ln107_8_fu_752_p2                  | -   |        | add_ln107_8 | add | fabric | 0       |
+|    add_ln107_9_fu_764_p2                  | -   |        | add_ln107_9 | add | fabric | 0       |
+|  + top_function_Pipeline_VITIS_LOOP_141_1 | 0   |        |             |     |        |         |
+|    add_ln142_fu_133_p2                    | -   |        | add_ln142   | add | fabric | 0       |
+|    add_ln141_fu_115_p2                    | -   |        | add_ln141   | add | fabric | 0       |
++-------------------------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++----------------------+------+------+--------+------------------+---------+------+---------+
+| Name                 | BRAM | URAM | Pragma | Variable         | Storage | Impl | Latency |
++----------------------+------+------+--------+------------------+---------+------+---------+
+| + top_function       | 0    | 0    |        |                  |         |      |         |
+|   visited_U          | -    | -    |        | visited          | ram_t2p | auto | 1       |
+|   nodeQueue_U        | -    | -    |        | nodeQueue        | ram_1p  | auto | 1       |
+|   visited_1_U        | -    | -    |        | visited_1        | ram_t2p | auto | 1       |
+|   stack_U            | -    | -    |        | stack            | ram_1p  | auto | 1       |
+|   visited_2_U        | -    | -    |        | visited_2        | ram_t2p | auto | 1       |
+|   stack_1_U          | -    | -    |        | stack_1          | ram_1p  | auto | 1       |
+|   visited_3_U        | -    | -    |        | visited_3        | ram_t2p | auto | 1       |
+|   queue_U            | -    | -    |        | queue            | ram_1p  | auto | 1       |
+|   adjacencyList_18_U | -    | -    |        | adjacencyList_18 | ram_1p  | auto | 1       |
+|   adjacencyList_16_U | -    | -    |        | adjacencyList_16 | ram_1p  | auto | 1       |
+|   adjacencyList_15_U | -    | -    |        | adjacencyList_15 | ram_1p  | auto | 1       |
+|   adjacencyList_13_U | -    | -    |        | adjacencyList_13 | ram_1p  | auto | 1       |
+|   adjacencyList_11_U | -    | -    |        | adjacencyList_11 | ram_1p  | auto | 1       |
+|   adjacencyList_7_U  | -    | -    |        | adjacencyList_7  | ram_t2p | auto | 1       |
+|   adjacencyList_4_U  | -    | -    |        | adjacencyList_4  | ram_t2p | auto | 1       |
+|   adjacencyList_3_U  | -    | -    |        | adjacencyList_3  | ram_t2p | auto | 1       |
+|   adjacencyList_2_U  | -    | -    |        | adjacencyList_2  | ram_t2p | auto | 1       |
+|   allTraversal_U     | -    | -    |        | allTraversal     | ram_1p  | auto | 1       |
+|   adjacencyList_1_U  | -    | -    |        | adjacencyList_1  | ram_t2p | auto | 1       |
++----------------------+------+------+--------+------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

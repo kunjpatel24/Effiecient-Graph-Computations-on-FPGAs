@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>Graph.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>Graph.cpp</string>
+      <key>line</key>
+      <integer>2</integer>
+      <key>column</key>
+      <integer>10</integer>
+      <key>message</key>
+      <string>non-portable path to file &apos;&quot;Graph.h&quot;&apos;; specified path differs in case from file name on disk</string>
+      <key>ID</key>
+      <integer>949</integer>
+      <key>WarningOption</key>
+      <string>nonportable-include-path</string>
+    </dict>
+  </array>
+</dict>

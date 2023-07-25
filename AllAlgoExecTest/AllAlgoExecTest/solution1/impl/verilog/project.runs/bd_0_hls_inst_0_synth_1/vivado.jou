@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jul 24 17:31:51 2023
+# Process ID: 19364
+# Current directory: C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On: KUNJ, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14888 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace

@@ -1,0 +1,7 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="Graph.cpp:37:22" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="Graph.cpp:37:22" LoopName="VITIS_LOOP_37_1" ParentFunc="top_function(int&amp;, int&amp;, int&amp;)"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="Graph.cpp:58:22" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="Graph.cpp:58:22" LoopName="VITIS_LOOP_58_1" ParentFunc="top_function(int&amp;, int&amp;, int&amp;)"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="Graph.cpp:79:22" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="Graph.cpp:79:22" LoopName="VITIS_LOOP_79_1" ParentFunc="top_function(int&amp;, int&amp;, int&amp;)"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="Graph.cpp:100:23" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="Graph.cpp:100:23" LoopName="VITIS_LOOP_100_1" ParentFunc="top_function(int&amp;, int&amp;, int&amp;)"/>
+</VitisHLS:BurstInfo>
+

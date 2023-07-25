@@ -1,0 +1,190 @@
+{
+    "1": {
+        "name": "top_function_Pipeline_3",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "top_function",
+        "file": "Graph.cpp",
+        "fileloc": "113",
+        "instructions": "82",
+        "total_instructions": "799",
+        "calls": "6 9 1 7 2 5 8 4 3",
+        "basicblocks": "3",
+        "loads": {
+            "G": "2",
+            "L": "4"
+        },
+        "stores": {
+            "G": "20",
+            "L": "8"
+        }
+    },
+    "2": {
+        "name": "top_function_Pipeline_5",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "top_function_Pipeline_VITIS_LOOP_141_1",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "top_function_Pipeline_VITIS_LOOP_100_1",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "162",
+        "total_instructions": "162",
+        "calls": "",
+        "basicblocks": "34",
+        "loads": {
+            "G": "11",
+            "L": "14"
+        },
+        "stores": {
+            "G": "2",
+            "L": "26"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "top_function_Pipeline_VITIS_LOOP_79_1",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "155",
+        "total_instructions": "155",
+        "calls": "",
+        "basicblocks": "34",
+        "loads": {
+            "G": "11",
+            "L": "13"
+        },
+        "stores": {
+            "G": "2",
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "top_function_Pipeline_1",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "top_function_Pipeline_VITIS_LOOP_58_1",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "155",
+        "total_instructions": "155",
+        "calls": "",
+        "basicblocks": "34",
+        "loads": {
+            "G": "11",
+            "L": "13"
+        },
+        "stores": {
+            "G": "2",
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "top_function_Pipeline_7",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "top_function_Pipeline_VITIS_LOOP_37_1",
+        "file": "Graph.cpp",
+        "fileloc": "0",
+        "instructions": "156",
+        "total_instructions": "156",
+        "calls": "",
+        "basicblocks": "34",
+        "loads": {
+            "G": "11",
+            "L": "13"
+        },
+        "stores": {
+            "G": "2",
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

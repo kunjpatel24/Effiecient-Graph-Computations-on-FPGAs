@@ -1,0 +1,107 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "1 2 6 3 5",
+    "file": "Graph.cpp",
+    "fileloc": 113,
+    "instructions": 34,
+    "loads": {
+      "G": 5,
+      "T": 1
+    },
+    "name": "top_function",
+    "stores": {
+      "T": 4
+    },
+    "total_instructions": 361
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "4 4 4 4 4 4 4 4 4 4",
+    "file": "Graph.cpp",
+    "fileloc": 15,
+    "instructions": 11,
+    "name": "addEdgesToGraph",
+    "total_instructions": 101
+  },
+  "2": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "Graph.cpp",
+    "fileloc": 29,
+    "instructions": 57,
+    "loads": {
+      "G": 2,
+      "L": 2
+    },
+    "name": "performBFS",
+    "stores": {
+      "G": 2,
+      "L": 5
+    },
+    "total_instructions": 57
+  },
+  "3": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "Graph.cpp",
+    "fileloc": 71,
+    "instructions": 56,
+    "loads": {
+      "G": 2,
+      "L": 2
+    },
+    "name": "performNormalTraversal",
+    "stores": {
+      "G": 2,
+      "L": 5
+    },
+    "total_instructions": 56
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "Graph.cpp",
+    "fileloc": 10,
+    "instructions": 9,
+    "name": "addEdge",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 9
+  },
+  "5": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "Graph.cpp",
+    "fileloc": 92,
+    "instructions": 57,
+    "loads": {
+      "G": 2,
+      "L": 2
+    },
+    "name": "performPageRankTraversal",
+    "stores": {
+      "G": 2,
+      "L": 5
+    },
+    "total_instructions": 57
+  },
+  "6": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "Graph.cpp",
+    "fileloc": 50,
+    "instructions": 56,
+    "loads": {
+      "G": 2,
+      "L": 2
+    },
+    "name": "performDFS",
+    "stores": {
+      "G": 2,
+      "L": 5
+    },
+    "total_instructions": 56
+  }
+}

@@ -1,0 +1,459 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jul 24 17:31:51 2023
+# Process ID: 19364
+# Current directory: C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On: KUNJ, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14888 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1467.320 ; gain = 159.125
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xcvu065_CIV-ffvc1517-1H-e -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu065_CIV'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu065_CIV'
+INFO: [Common 17-86] Your Synthesis license expires in 15 day(s)
+INFO: [Device 21-403] Loading part xcvu065_CIV-ffvc1517-1H-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19756
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2693.637 ; gain = 406.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'top_function' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_adjacencyList_18_RAM_AUTO_1R1W' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_adjacencyList_18_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_function_adjacencyList_18_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_adjacencyList_18_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_adjacencyList_18_RAM_AUTO_1R1W' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_adjacencyList_18_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_function_adjacencyList_7_RAM_AUTO_1R1W' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_adjacencyList_7_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_function_adjacencyList_7_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_adjacencyList_7_RAM_AUTO_1R1W.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_adjacencyList_7_RAM_AUTO_1R1W' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_adjacencyList_7_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_function_allTraversal_RAM_AUTO_1R1W' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_allTraversal_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './top_function_allTraversal_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_allTraversal_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_allTraversal_RAM_AUTO_1R1W' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_allTraversal_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_function_visited_RAM_AUTO_1R1W' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_visited_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_visited_RAM_AUTO_1R1W' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_visited_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_function_nodeQueue_RAM_AUTO_1R1W' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_nodeQueue_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_nodeQueue_RAM_AUTO_1R1W' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_nodeQueue_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_1' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_flow_control_loop_pipe_sequential_init' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_1' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_3' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_3' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_5' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_5.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_5' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_7' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_7' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_37_1' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_37_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_37_1' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_37_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_58_1' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_58_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_58_1' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_58_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_79_1' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_79_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_79_1' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_79_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_100_1' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_100_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_100_1' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_100_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_141_1' [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_141_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function_top_function_Pipeline_VITIS_LOOP_141_1' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_141_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'top_function' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-7129] Port reset in module top_function_nodeQueue_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_function_visited_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_function_adjacencyList_7_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_function_allTraversal_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module top_function_adjacencyList_18_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2828.156 ; gain = 540.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2846.078 ; gain = 558.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2846.078 ; gain = 558.816
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2846.078 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_function_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/top_function_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2963.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 2963.855 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 2963.855 ; gain = 676.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu065_CIV-ffvc1517-1H-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 2963.855 ; gain = 676.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 2963.855 ; gain = 676.594
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln44_4_reg_970_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_37_1.v:507]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln44_3_reg_957_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_37_1.v:501]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln44_2_reg_948_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_37_1.v:495]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln44_1_reg_939_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_37_1.v:489]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln65_reg_948_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_58_1.v:476]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln65_1_reg_957_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_58_1.v:446]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln65_2_reg_966_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_58_1.v:452]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln65_3_reg_979_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_58_1.v:458]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln86_reg_948_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_79_1.v:476]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln86_1_reg_957_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_79_1.v:446]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln86_2_reg_966_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_79_1.v:452]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln86_3_reg_979_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_79_1.v:458]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln107_4_reg_1024_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_100_1.v:544]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln107_3_reg_1011_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_100_1.v:538]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln107_2_reg_1002_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_100_1.v:532]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln107_1_reg_993_reg' and it is trimmed from '32' to '5' bits. [c:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/48a4/hdl/verilog/top_function_top_function_Pipeline_VITIS_LOOP_100_1.v:526]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "top_function_adjacencyList_18_RAM_AUTO_1R1W:/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "top_function_adjacencyList_7_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-3971] The signal "top_function_adjacencyList_7_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-6904] The RAM "top_function_allTraversal_RAM_AUTO_1R1W:/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "top_function_visited_RAM_AUTO_1R1W:/ram_reg"
+INFO: [Synth 8-3971] The signal "top_function_visited_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-6904] The RAM "top_function_nodeQueue_RAM_AUTO_1R1W:/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 2963.855 ; gain = 676.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 45    
+	   2 Input    5 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 75    
+	               17 Bit    Registers := 1     
+	               13 Bit    Registers := 4     
+	                5 Bit    Registers := 28    
+	                1 Bit    Registers := 150   
++---RAMs : 
+	              100 Bit	(20 X 5 bit)          RAMs := 5     
+	               20 Bit	(20 X 1 bit)          RAMs := 14    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 75    
+	   2 Input   17 Bit        Muxes := 2     
+	  18 Input   17 Bit        Muxes := 1     
+	  14 Input   13 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 25    
+	   5 Input    5 Bit        Muxes := 6     
+	  10 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 131   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:120)
+BRAMs: 2520 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_18_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_16_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_15_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_13_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_11_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/allTraversal_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/nodeQueue_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/stack_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/stack_1_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/queue_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/adjacencyList_7_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/adjacencyList_7_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/adjacencyList_4_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/adjacencyList_4_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/adjacencyList_3_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/adjacencyList_3_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/adjacencyList_2_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/adjacencyList_2_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/adjacencyList_1_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/adjacencyList_1_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/visited_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/visited_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/visited_1_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/visited_1_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/visited_2_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/visited_2_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/visited_3_U/ram_reg"
+INFO: [Synth 8-3971] The signal "inst/visited_3_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_18_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_16_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_15_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_13_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/adjacencyList_11_U/ram_reg" of size (depth=20 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/allTraversal_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/nodeQueue_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/stack_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/stack_1_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/queue_U/ram_reg" of size (depth=20 x width=5) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:39 . Memory (MB): peak = 2963.855 ; gain = 676.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | adjacencyList_7_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | adjacencyList_4_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | adjacencyList_3_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | adjacencyList_2_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | adjacencyList_1_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | visited_U/ram_reg         | 20 x 1(READ_FIRST)     | W | R | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | visited_1_U/ram_reg       | 20 x 1(READ_FIRST)     | W | R | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | visited_2_U/ram_reg       | 20 x 1(READ_FIRST)     | W | R | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | visited_3_U/ram_reg       | 20 x 1(READ_FIRST)     | W | R | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------+-----------+----------------------+----------------+
+|inst        | adjacencyList_18_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | adjacencyList_16_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | adjacencyList_15_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | adjacencyList_13_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | adjacencyList_11_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | allTraversal_U/ram_reg     | Implied   | 32 x 5               | RAM16X1S x 10  | 
+|inst        | nodeQueue_U/ram_reg        | Implied   | 32 x 5               | RAM16X1S x 10  | 
+|inst        | stack_U/ram_reg            | Implied   | 32 x 5               | RAM16X1S x 10  | 
+|inst        | stack_1_U/ram_reg          | Implied   | 32 x 5               | RAM16X1S x 10  | 
+|inst        | queue_U/ram_reg            | Implied   | 32 x 5               | RAM16X1S x 10  | 
++------------+----------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 2963.855 ; gain = 676.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:52 . Memory (MB): peak = 3029.375 ; gain = 742.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst        | adjacencyList_7_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | adjacencyList_4_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | adjacencyList_3_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | adjacencyList_2_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | adjacencyList_1_U/ram_reg | 20 x 1(NO_CHANGE)      | W |   | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | visited_U/ram_reg         | 20 x 1(READ_FIRST)     | W | R | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | visited_1_U/ram_reg       | 20 x 1(READ_FIRST)     | W | R | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | visited_2_U/ram_reg       | 20 x 1(READ_FIRST)     | W | R | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
+|inst        | visited_3_U/ram_reg       | 20 x 1(READ_FIRST)     | W | R | 20 x 1(READ_FIRST)     | W | R | Port A and B     | 1      | 0      | 1               | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------+-----------+----------------------+----------------+
+|inst        | adjacencyList_18_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | adjacencyList_16_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | adjacencyList_15_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | adjacencyList_13_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | adjacencyList_11_U/ram_reg | Implied   | 32 x 1               | RAM16X1S x 2   | 
+|inst        | allTraversal_U/ram_reg     | Implied   | 32 x 5               | RAM16X1S x 10  | 
+|inst        | nodeQueue_U/ram_reg        | Implied   | 32 x 5               | RAM16X1S x 10  | 
+|inst        | stack_U/ram_reg            | Implied   | 32 x 5               | RAM16X1S x 10  | 
+|inst        | stack_1_U/ram_reg          | Implied   | 32 x 5               | RAM16X1S x 10  | 
+|inst        | queue_U/ram_reg            | Implied   | 32 x 5               | RAM16X1S x 10  | 
++------------+----------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/adjacencyList_7_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/adjacencyList_4_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/adjacencyList_3_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/adjacencyList_2_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/adjacencyList_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/visited_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/visited_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/visited_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/visited_1_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/visited_2_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/visited_2_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/visited_3_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/visited_3_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 3043.555 ; gain = 756.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:01:00 . Memory (MB): peak = 3058.188 ; gain = 770.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:01:00 . Memory (MB): peak = 3058.188 ; gain = 770.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:01:00 . Memory (MB): peak = 3058.188 ; gain = 770.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:01:00 . Memory (MB): peak = 3058.188 ; gain = 770.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:01:01 . Memory (MB): peak = 3058.188 ; gain = 770.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:01:01 . Memory (MB): peak = 3058.188 ; gain = 770.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |   204|
+|2     |LUT1     |    82|
+|3     |LUT2     |    96|
+|4     |LUT3     |   326|
+|5     |LUT4     |   843|
+|6     |LUT5     |   880|
+|7     |LUT6     |  1054|
+|8     |RAM16X1S |    60|
+|9     |RAMB18E2 |     9|
+|11    |FDRE     |  2863|
+|12    |FDSE     |    69|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:01:01 . Memory (MB): peak = 3058.188 ; gain = 770.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:58 . Memory (MB): peak = 3058.188 ; gain = 653.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:01:01 . Memory (MB): peak = 3058.188 ; gain = 770.926
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 3070.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 264 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3088.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 60 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 60 instances
+
+Synth Design complete | Checksum: 30688aa3
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:01:12 . Memory (MB): peak = 3088.684 ; gain = 1550.395
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 457aa0812acdb9b2
+INFO: [Coretcl 2-1174] Renamed 38 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 24 17:33:27 2023...

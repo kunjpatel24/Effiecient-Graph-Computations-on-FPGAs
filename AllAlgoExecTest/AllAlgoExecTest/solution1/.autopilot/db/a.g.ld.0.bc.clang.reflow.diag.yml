@@ -1,0 +1,172 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: Graph.cpp, Line: 15, Column: 0 }
+Function:        _Z15addEdgesToGraphv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'addEdge(int, int)'
+    DebugLoc:        { File: Graph.cpp, Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'addEdgesToGraph()'
+    DebugLoc:        { File: Graph.cpp, Line: 15, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'addEdgesToGraph()'
+    DebugLoc:        { File: Graph.cpp, Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'performBFS(int)'
+    DebugLoc:        { File: Graph.cpp, Line: 29, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'performDFS(int)'
+    DebugLoc:        { File: Graph.cpp, Line: 50, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'performNormalTraversal(int)'
+    DebugLoc:        { File: Graph.cpp, Line: 71, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'performPageRankTraversal(int)'
+    DebugLoc:        { File: Graph.cpp, Line: 92, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: Graph.cpp, Line: 37, Column: 22 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_37_1
+  - String:          ' '
+  - LoopLoc:         'Graph.cpp:37:22'
+  - String:          ' '
+  - Function:        'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: Graph.cpp, Line: 58, Column: 22 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_58_1
+  - String:          ' '
+  - LoopLoc:         'Graph.cpp:58:22'
+  - String:          ' '
+  - Function:        'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: Graph.cpp, Line: 79, Column: 22 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_79_1
+  - String:          ' '
+  - LoopLoc:         'Graph.cpp:79:22'
+  - String:          ' '
+  - Function:        'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: Graph.cpp, Line: 100, Column: 23 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_100_1
+  - String:          ' '
+  - LoopLoc:         'Graph.cpp:100:23'
+  - String:          ' '
+  - Function:        'top_function(int&, int&, int&)'
+    DebugLoc:        { File: Graph.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: Graph.cpp, Line: 79, Column: 22 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_79_1
+  - String:          '''('
+  - LoopLoc:         'Graph.cpp:79:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: Graph.cpp, Line: 58, Column: 22 }
+Function:        _Z12top_functionRiS_S_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_58_1
+  - String:          '''('
+  - LoopLoc:         'Graph.cpp:58:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...

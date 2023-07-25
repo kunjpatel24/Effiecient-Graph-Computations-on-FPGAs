@@ -1,0 +1,30 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-949" msg_severity="WARNING" msg_loc="Graph.cpp:2:10" msg_body="non-portable path to file '&quot;Graph.h&quot;'; specified path differs in case from file name on disk">
+        <args ClangWarningOption="nonportable-include-path"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_function" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_function" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Graph.cpp:15:0" msg_body="Inlining function 'addEdge(int, int)' into 'addEdgesToGraph()'">
+        <args Callee="addEdge(int, int)" Callee-DebugLoc="File Graph.cpp Line 10 Column 0" Caller="addEdgesToGraph()" Caller-DebugLoc="File Graph.cpp Line 15 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Graph.cpp:113:0" msg_body="Inlining function 'addEdgesToGraph()' into 'top_function(int&amp;, int&amp;, int&amp;)'">
+        <args Callee="addEdgesToGraph()" Callee-DebugLoc="File Graph.cpp Line 15 Column 0" Caller="top_function(int&amp;, int&amp;, int&amp;)" Caller-DebugLoc="File Graph.cpp Line 113 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Graph.cpp:113:0" msg_body="Inlining function 'performBFS(int)' into 'top_function(int&amp;, int&amp;, int&amp;)'">
+        <args Callee="performBFS(int)" Callee-DebugLoc="File Graph.cpp Line 29 Column 0" Caller="top_function(int&amp;, int&amp;, int&amp;)" Caller-DebugLoc="File Graph.cpp Line 113 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Graph.cpp:113:0" msg_body="Inlining function 'performDFS(int)' into 'top_function(int&amp;, int&amp;, int&amp;)'">
+        <args Callee="performDFS(int)" Callee-DebugLoc="File Graph.cpp Line 50 Column 0" Caller="top_function(int&amp;, int&amp;, int&amp;)" Caller-DebugLoc="File Graph.cpp Line 113 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Graph.cpp:113:0" msg_body="Inlining function 'performNormalTraversal(int)' into 'top_function(int&amp;, int&amp;, int&amp;)'">
+        <args Callee="performNormalTraversal(int)" Callee-DebugLoc="File Graph.cpp Line 71 Column 0" Caller="top_function(int&amp;, int&amp;, int&amp;)" Caller-DebugLoc="File Graph.cpp Line 113 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Graph.cpp:113:0" msg_body="Inlining function 'performPageRankTraversal(int)' into 'top_function(int&amp;, int&amp;, int&amp;)'">
+        <args Callee="performPageRankTraversal(int)" Callee-DebugLoc="File Graph.cpp Line 92 Column 0" Caller="top_function(int&amp;, int&amp;, int&amp;)" Caller-DebugLoc="File Graph.cpp Line 113 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

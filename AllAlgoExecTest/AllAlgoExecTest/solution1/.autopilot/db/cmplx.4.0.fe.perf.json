@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 54,
+    "calls": "",
+    "file": "Graph.cpp",
+    "fileloc": 113,
+    "instructions": 282,
+    "loads": {
+      "G": 11,
+      "L": 8
+    },
+    "name": "top_function",
+    "stores": {
+      "G": 28,
+      "L": 20,
+      "T": 4
+    },
+    "total_instructions": 282
+  }
+}

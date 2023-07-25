@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AdditionalInfo>
+  <CTypeInfo>
+      <RtlPort>
+        <name>newListValue</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>newListValue_ap_vld</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>signal_r</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>signal_r_ap_vld</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>totalTraversalSize</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>totalTraversalSize_ap_vld</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+  </CTypeInfo>
+  <DesignConstraint>
+    <clk_period>10</clk_period>
+  </DesignConstraint>
+  <Machine>64</Machine>
+  <modelParameters>
+    <combinational>0</combinational>
+    <latency>undef</latency>
+    <II>undef</II>
+  </modelParameters>
+</AdditionalInfo>

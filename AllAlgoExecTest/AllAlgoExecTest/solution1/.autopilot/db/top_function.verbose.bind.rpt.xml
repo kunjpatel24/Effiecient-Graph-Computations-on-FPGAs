@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'top_function'" level="0">
+<item name = "Date">Mon Jul 24 10:31:11 2023
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">AllAlgoExecTest</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu065_CIV-ffvc1517-1H-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.840 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_top_function_Pipeline_1_fu_432">top_function_Pipeline_1, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_top_function_Pipeline_3_fu_438">top_function_Pipeline_3, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_top_function_Pipeline_5_fu_444">top_function_Pipeline_5, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_top_function_Pipeline_7_fu_450">top_function_Pipeline_7, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_top_function_Pipeline_VITIS_LOOP_37_1_fu_456">top_function_Pipeline_VITIS_LOOP_37_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486">top_function_Pipeline_VITIS_LOOP_58_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518">top_function_Pipeline_VITIS_LOOP_79_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_top_function_Pipeline_VITIS_LOOP_100_1_fu_550">top_function_Pipeline_VITIS_LOOP_100_1, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_top_function_Pipeline_VITIS_LOOP_141_1_fu_582">top_function_Pipeline_VITIS_LOOP_141_1, ?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "top_function",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "top_function"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "top_function",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "top_function"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/csynth.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

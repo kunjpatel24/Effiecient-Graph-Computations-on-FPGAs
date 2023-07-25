@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test_bench.cpp in debug mode
+   Compiling ../../../../Graph.cpp in debug mode
+   Generating csim.exe
+Signal: 4
+newListValue: 90
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

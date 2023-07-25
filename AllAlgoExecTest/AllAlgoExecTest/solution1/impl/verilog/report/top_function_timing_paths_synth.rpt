@@ -1,0 +1,548 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date              : Mon Jul 24 17:35:32 2023
+| Host              : KUNJ running 64-bit major release  (build 9200)
+| Command           : report_timing -max_paths 10 -file ./report/top_function_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xcvu065_CIV-ffvc1517
+| Speed File        : -1H  PRODUCTION 1.27 12-04-2018
+| Design State      : Synthesized
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.999ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_U/q0_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.029ns  (logic 2.391ns (59.345%)  route 1.638ns (40.655%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_1_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_0[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1/O
+                         net (fo=1, unplaced)         0.248     2.426    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.224     2.650 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1/O
+                         net (fo=1, unplaced)         0.271     2.921    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.050     2.971 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__1/O
+                         net (fo=10, unplaced)        0.343     3.314    bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.539 r  bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0/SP/O
+                         net (fo=1, unplaced)         0.293     3.832    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0_reg[0]_0
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.999 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0[0]_i_1__1/O
+                         net (fo=1, unplaced)         0.030     4.029    bd_0_i/hls_inst/inst/stack_U/D[0]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[0]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_U/q0_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.029    
+  -------------------------------------------------------------------
+                         slack                                  5.999    
+
+Slack (MET) :             5.999ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_U/q0_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.029ns  (logic 2.391ns (59.345%)  route 1.638ns (40.655%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_1_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_0[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1/O
+                         net (fo=1, unplaced)         0.248     2.426    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.224     2.650 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1/O
+                         net (fo=1, unplaced)         0.271     2.921    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.050     2.971 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__1/O
+                         net (fo=10, unplaced)        0.343     3.314    bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0__1/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.539 r  bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0__1/SP/O
+                         net (fo=1, unplaced)         0.293     3.832    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0_reg[1]_0
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.999 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0[1]_i_1__1/O
+                         net (fo=1, unplaced)         0.030     4.029    bd_0_i/hls_inst/inst/stack_U/D[1]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[1]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_U/q0_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.029    
+  -------------------------------------------------------------------
+                         slack                                  5.999    
+
+Slack (MET) :             5.999ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_U/q0_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.029ns  (logic 2.391ns (59.345%)  route 1.638ns (40.655%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_1_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_0[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1/O
+                         net (fo=1, unplaced)         0.248     2.426    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.224     2.650 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1/O
+                         net (fo=1, unplaced)         0.271     2.921    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.050     2.971 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__1/O
+                         net (fo=10, unplaced)        0.343     3.314    bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0__3/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.539 r  bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0__3/SP/O
+                         net (fo=1, unplaced)         0.293     3.832    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0_reg[2]_0
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.999 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0[2]_i_1__1/O
+                         net (fo=1, unplaced)         0.030     4.029    bd_0_i/hls_inst/inst/stack_U/D[2]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[2]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_U/q0_reg[2]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.029    
+  -------------------------------------------------------------------
+                         slack                                  5.999    
+
+Slack (MET) :             5.999ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_U/q0_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.029ns  (logic 2.391ns (59.345%)  route 1.638ns (40.655%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_1_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_0[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1/O
+                         net (fo=1, unplaced)         0.248     2.426    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.224     2.650 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1/O
+                         net (fo=1, unplaced)         0.271     2.921    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.050     2.971 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__1/O
+                         net (fo=10, unplaced)        0.343     3.314    bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0__5/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.539 r  bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0__5/SP/O
+                         net (fo=1, unplaced)         0.293     3.832    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0_reg[3]_0
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.999 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0[3]_i_1__1/O
+                         net (fo=1, unplaced)         0.030     4.029    bd_0_i/hls_inst/inst/stack_U/D[3]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[3]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_U/q0_reg[3]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.029    
+  -------------------------------------------------------------------
+                         slack                                  5.999    
+
+Slack (MET) :             5.999ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_U/q0_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.029ns  (logic 2.391ns (59.345%)  route 1.638ns (40.655%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_1_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_1_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_0[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1/O
+                         net (fo=1, unplaced)         0.248     2.426    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_25__1_n_0
+                         LUT6 (Prop_LUT6_I2_O)        0.224     2.650 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1/O
+                         net (fo=1, unplaced)         0.271     2.921    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_15__1_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.050     2.971 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__1/O
+                         net (fo=10, unplaced)        0.343     3.314    bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0__7/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.539 r  bd_0_i/hls_inst/inst/stack_U/ram_reg_0_15_0_0__7/SP/O
+                         net (fo=1, unplaced)         0.293     3.832    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0_reg[4]_2
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.999 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_79_1_fu_518/flow_control_loop_pipe_sequential_init_U/q0[4]_i_2__1/O
+                         net (fo=1, unplaced)         0.030     4.029    bd_0_i/hls_inst/inst/stack_U/D[4]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_U/q0_reg[4]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_U/q0_reg[4]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.029    
+  -------------------------------------------------------------------
+                         slack                                  5.999    
+
+Slack (MET) :             6.012ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_1_U/q0_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.016ns  (logic 2.334ns (58.118%)  route 1.682ns (41.882%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_2_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/DOUTADOUT[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0/O
+                         net (fo=1, unplaced)         0.292     2.470    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.637 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0/O
+                         net (fo=1, unplaced)         0.271     2.908    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0_n_0
+                         LUT6 (Prop_LUT6_I0_O)        0.050     2.958 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__0/O
+                         net (fo=10, unplaced)        0.343     3.301    bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.526 r  bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0/SP/O
+                         net (fo=1, unplaced)         0.293     3.819    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0_reg[0]_1
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.986 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0[0]_i_1__2/O
+                         net (fo=1, unplaced)         0.030     4.016    bd_0_i/hls_inst/inst/stack_1_U/D[0]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_1_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[0]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_1_U/q0_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.016    
+  -------------------------------------------------------------------
+                         slack                                  6.012    
+
+Slack (MET) :             6.012ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_1_U/q0_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.016ns  (logic 2.334ns (58.118%)  route 1.682ns (41.882%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_2_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/DOUTADOUT[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0/O
+                         net (fo=1, unplaced)         0.292     2.470    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.637 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0/O
+                         net (fo=1, unplaced)         0.271     2.908    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0_n_0
+                         LUT6 (Prop_LUT6_I0_O)        0.050     2.958 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__0/O
+                         net (fo=10, unplaced)        0.343     3.301    bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0__1/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.526 r  bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0__1/SP/O
+                         net (fo=1, unplaced)         0.293     3.819    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0_reg[1]_0
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.986 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0[1]_i_1__2/O
+                         net (fo=1, unplaced)         0.030     4.016    bd_0_i/hls_inst/inst/stack_1_U/D[1]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_1_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[1]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_1_U/q0_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.016    
+  -------------------------------------------------------------------
+                         slack                                  6.012    
+
+Slack (MET) :             6.012ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_1_U/q0_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.016ns  (logic 2.334ns (58.118%)  route 1.682ns (41.882%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_2_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/DOUTADOUT[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0/O
+                         net (fo=1, unplaced)         0.292     2.470    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.637 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0/O
+                         net (fo=1, unplaced)         0.271     2.908    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0_n_0
+                         LUT6 (Prop_LUT6_I0_O)        0.050     2.958 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__0/O
+                         net (fo=10, unplaced)        0.343     3.301    bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0__3/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.526 r  bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0__3/SP/O
+                         net (fo=1, unplaced)         0.293     3.819    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0_reg[2]_0
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.986 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0[2]_i_1__2/O
+                         net (fo=1, unplaced)         0.030     4.016    bd_0_i/hls_inst/inst/stack_1_U/D[2]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_1_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[2]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_1_U/q0_reg[2]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.016    
+  -------------------------------------------------------------------
+                         slack                                  6.012    
+
+Slack (MET) :             6.012ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_1_U/q0_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.016ns  (logic 2.334ns (58.118%)  route 1.682ns (41.882%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_2_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/DOUTADOUT[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0/O
+                         net (fo=1, unplaced)         0.292     2.470    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.637 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0/O
+                         net (fo=1, unplaced)         0.271     2.908    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0_n_0
+                         LUT6 (Prop_LUT6_I0_O)        0.050     2.958 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__0/O
+                         net (fo=10, unplaced)        0.343     3.301    bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0__5/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.526 r  bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0__5/SP/O
+                         net (fo=1, unplaced)         0.293     3.819    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0_reg[3]_0
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.986 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0[3]_i_1__2/O
+                         net (fo=1, unplaced)         0.030     4.016    bd_0_i/hls_inst/inst/stack_1_U/D[3]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_1_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[3]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_1_U/q0_reg[3]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.016    
+  -------------------------------------------------------------------
+                         slack                                  6.012    
+
+Slack (MET) :             6.012ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/stack_1_U/q0_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.016ns  (logic 2.334ns (58.118%)  route 1.682ns (41.882%))
+  Logic Levels:           5  (LUT6=4 RAMS32=1)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000     0.000    bd_0_i/hls_inst/inst/visited_2_U/ap_clk
+                         RAMB18E2                                     r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[0])
+                                                      1.558     1.558 r  bd_0_i/hls_inst/inst/visited_2_U/ram_reg_bram_0/DOUTADOUT[0]
+                         net (fo=144, unplaced)       0.453     2.011    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/DOUTADOUT[0]
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.178 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0/O
+                         net (fo=1, unplaced)         0.292     2.470    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_26__0_n_0
+                         LUT6 (Prop_LUT6_I4_O)        0.167     2.637 f  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0/O
+                         net (fo=1, unplaced)         0.271     2.908    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_17__0_n_0
+                         LUT6 (Prop_LUT6_I0_O)        0.050     2.958 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/ram_reg_0_15_0_0_i_4__0/O
+                         net (fo=10, unplaced)        0.343     3.301    bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0__7/A1
+                         RAMS32 (Prop_RAMS32_ADR1_O)
+                                                      0.225     3.526 r  bd_0_i/hls_inst/inst/stack_1_U/ram_reg_0_15_0_0__7/SP/O
+                         net (fo=1, unplaced)         0.293     3.819    bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0_reg[4]_2
+                         LUT6 (Prop_LUT6_I5_O)        0.167     3.986 r  bd_0_i/hls_inst/inst/grp_top_function_Pipeline_VITIS_LOOP_58_1_fu_486/flow_control_loop_pipe_sequential_init_U/q0[4]_i_2__2/O
+                         net (fo=1, unplaced)         0.030     4.016    bd_0_i/hls_inst/inst/stack_1_U/D[4]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=3009, unset)         0.000    10.000    bd_0_i/hls_inst/inst/stack_1_U/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/stack_1_U/q0_reg[4]/C
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         FDRE (Setup_FDRE_C_D)        0.063    10.028    bd_0_i/hls_inst/inst/stack_1_U/q0_reg[4]
+  -------------------------------------------------------------------
+                         required time                         10.028    
+                         arrival time                          -4.016    
+  -------------------------------------------------------------------
+                         slack                                  6.012    
+
+
+
+

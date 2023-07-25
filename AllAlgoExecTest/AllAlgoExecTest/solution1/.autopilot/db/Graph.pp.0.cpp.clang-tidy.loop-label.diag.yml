@@ -1,0 +1,85 @@
+---
+MainSourceFile:  'C:/Users/kunjp/Desktop/EE800/new/AllAlgoExecTest/AllAlgoExecTest/AllAlgoExecTest/solution1/.autopilot/db/Graph.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_37_1:  '
+    FileOffset:      37
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          754011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_37_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_2:  '
+    FileOffset:      41
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          754125
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_58_1:  '
+    FileOffset:      58
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          754492
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_58_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_62_2:  '
+    FileOffset:      62
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          754600
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_62_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_79_1:  '
+    FileOffset:      79
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          754983
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_79_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_2:  '
+    FileOffset:      83
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          755091
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_1:  '
+    FileOffset:      100
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          755498
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_2:  '
+    FileOffset:      104
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          755616
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_141_1:  '
+    FileOffset:      141
+    FilePath:        Graph.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\kunjp\Desktop\EE800\new\AllAlgoExecTest\AllAlgoExecTest\AllAlgoExecTest\solution1\.autopilot\db\Graph.pp.0.cpp'
+        Offset:          756612
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_141_1: '
+...
