@@ -2,20 +2,28 @@ To install the Xilinx Vitis HLS software, go to the [Xilinx website](https://www
 
 Step 1: Downloading the Clone the Repository: Use Git to clone the code repository from GitHub:
 </br>
-git clone <[Efficient-Graph-Computations-on-FPGAs](https://github.com/kunjpatel24/Effiecient-Graph-Computations-on-FPGAs/tree/master)>
-
+git clone [Efficient-Graph-Computations-on-FPGAs](https://github.com/kunjpatel24/Effiecient-Graph-Computations-on-FPGAs/tree/master)
+</br>
 Step 2: Importing the dataset files
+</br>
 The datasets can be obtained from [Stanford Data Library](https://snap.stanford.edu/snap/download.html)
+</br>
 NOTE: Some are included in the 'Dataset' folder, to use a different one, please use the above link.
 
 Step 3:Running your code
 
-\a) Create a new project in Vitis HLS. You can do this by selecting the "New Project" option from the File menu.
+a) Create a new project in Vitis HLS. You can do this by selecting the "New Project" option from the File menu.
+</br>
 b) Add Graph.cpp to top function
+</br>
 c) Add Graph.cpp as the source file
+</br>
 d) Add Graph.h as the source file, click next
+</br>
 e) Add test_bench.cpp as a test bench file, click next
+</br>
 f) From part selection, select 'xcvu11p-flga2577-1-e'
+</br>
 g) Run the Vitis HLS compiler
 
 Once you have completed these steps, you will have converted your C++ logic into RTL and have a solution ready for implementation on a Xilinx FPGA.
