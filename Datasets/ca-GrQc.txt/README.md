@@ -3,19 +3,14 @@ A social network of LastFM users which was collected from the public API in Marc
 Dataset statistics  
 
 Directed - No.  
-
 Node features - Yes.  
-
 Edge features - No.  
-
 Node labels - Yes. Multi class.  
-
 Temporal - No.  
-
 Nodes - 7,624  
-
 Edges - 27,806  
-
 Density - 0.001  
+Transitvity - 0.179  
 
-Transitvity - 0.179
+Source :  
+B. Rozemberczki and R. Sarkar. Characteristic Functions on Graphs: Birds of a Feather, from Statistical Descriptors to Parametric Models. 2020.
