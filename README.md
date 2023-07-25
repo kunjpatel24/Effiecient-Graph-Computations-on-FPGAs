@@ -1,9 +1,7 @@
 To install the Xilinx Vitis HLS software, go to the [Xilinx website](https://www.bing.com/ck/a?!&&p=b266d0aa7fdab65fJmltdHM9MTY5MDE1NjgwMCZpZ3VpZD0wMTZhYzM2ZS1lZTg4LTYwZjMtM2E0ZS1kMjc1ZWZlYTYxYTcmaW5zaWQ9NTIwNg&ptn=3&hsh=3&fclid=016ac36e-ee88-60f3-3a4e-d275efea61a7&psq=download+xilinx+vivado+hls&u=a1aHR0cHM6Ly93d3cueGlsaW54LmNvbS9zdXBwb3J0L2Rvd25sb2FkLmh0bWw&ntb=1) and download the latest version of the software. Follow the installation instructions on the website.
 
 Step 1: Downloading the Clone the Repository: Use Git to clone the code repository from GitHub:
-
-bash
-Copy code
+</br>
 git clone <[Efficient-Graph-Computations-on-FPGAs](https://github.com/kunjpatel24/Effiecient-Graph-Computations-on-FPGAs/tree/master)>
 
 Step 2: Importing the dataset files
