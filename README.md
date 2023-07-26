@@ -9,7 +9,10 @@ The datasets can be obtained from [Stanford Data Library](https://snap.stanford.
   
   NOTE: Some are included in the 'Dataset' folder, to use a different one, please use the above link.  
   
-  **Step 3**:Running your code
+  **Step 3**:Running the code  
+Open Vitis HLS, on the start up screen, select open project and navigate to the download path of the GitHub repository from above.  
+
+Alternately, you can also create your own new projet
 
 a) Create a new project in Vitis HLS. You can do this by selecting the "New Project" option from the File menu.  
 b) Add Graph.cpp to top function  
