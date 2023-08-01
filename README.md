@@ -22,4 +22,7 @@ e) Add test_bench.cpp as a test bench file, click next
 f) From part selection, select '**xcvu11p-flga2577-1-e**'  
 g) Run the Vitis HLS compiler
 
-Once you have completed these steps, you will have converted your C++ logic into RTL and have a solution ready for implementation on a Xilinx FPGA.
+Once you have completed these steps, you will have converted your C++ logic into RTL and have a solution ready for implementation on a Xilinx FPGA.  
+
+The 'MEGR.txt' file is a compression algorithm that can be used to compress dataset files in order to reduce the file size making it more memory efficient.  
+The 'Adaptive_Schedular.txt' file is an example of showing the assignment of tasks to PEs(Processing Elements).
